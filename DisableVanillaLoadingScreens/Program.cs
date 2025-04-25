@@ -185,9 +185,7 @@ namespace DisableVanillaLoadingScreens {
                     screen.Conditions.Add(new ConditionFloat() {
                         ComparisonValue = -1,
                         CompareOperator = CompareOperator.EqualTo,
-                        Data = new FunctionConditionData() {
-                            Function = Condition.Function.GetRandomPercent
-                        }
+                        Data = new GetRandomPercentConditionData()
                     });
                 }
             }
